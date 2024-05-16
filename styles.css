@@ -1,14 +1,19 @@
 /* styles.css */
 body {
-    background: linear-gradient(to bottom, #f0f0f0, #ffffff); /* 渐变色背景 */
-    font-family: Arial, sans-serif; /* 设置字体 */
+    background: url(background.png) no-repeat center center fixed;
+    background-size: cover;
+    font-family: 'Open Sans', Arial, sans-serif;
     margin: 0;
     padding: 0;
 }
 
 nav {
-    background-color: #333; /* 导航栏背景颜色 */
-    color: #fff; /* 导航栏文字颜色 */
+    background-color: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+    color: #333;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 20px;
 }
 
 .content {
@@ -16,20 +21,34 @@ nav {
 }
 
 ul {
+    display: flex;
     list-style-type: none;
     padding: 0;
 }
 
 li {
-    display: inline;
     margin-right: 10px;
 }
 
 a {
-    color: #333; /* 链接颜色 */
+    color: #333;
     text-decoration: none;
 }
 
 a:hover {
-    color: #555; /* 鼠标悬停时链接颜色 */
+    color: #555;
+}
+
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+    }
+
+    ul {
+        align-items: center;
+    }
+
+    li {
+        margin: 10px 0;
+    }
 }
