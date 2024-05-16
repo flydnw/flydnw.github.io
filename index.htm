@@ -5,12 +5,106 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>俸云龙的个人博客</title>
     <link rel="stylesheet" href="style.css">
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css"></script>
-    <script src="https://cdn.jsdelivr.net/npm/wow.js@1.1.2/dist/wow.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
     <script>
         new WOW().init();
     </script>
+    <style>
+        /* style.css */
+        body {
+            background-color: #f8f9fa;
+            font-family: 'Open Sans', Arial, sans-serif;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        header {
+            background-color: #2c3e50;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav {
+            background-color: rgba(255, 255, 255, 0.8);
+            box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 20px;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .branding {
+            font-size: 24px;
+            color: #fff;
+        }
+
+        .nav-menu {
+            display: flex;
+            justify-content: flex-start;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        a {
+            text-decoration: none;
+            color: #333;
+            transition: color 0.3s;
+        }
+
+        a:hover {
+            color: #555;
+        }
+
+        .post {
+            background-color: #f5f5f5;
+            padding: 20px;
+            margin-bottom: 20px;
+            transition: all 0.3s;
+        }
+
+        .post:hover {
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .button {
+            display: inline-block;
+            padding: 10px 15px;
+            background-color: #2c3e50;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            text-decoration: none;
+            font-size: 14px;
+            transition: background-color 0.3s;
+        }
+
+        .button:hover {
+            background-color: #34495e;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -32,44 +126,39 @@
         </nav>
     </header>
     <div class="post fadeInUp">
-    <h2>关于</h2>
-    <p><a href="about.html" class="button">了解更多</a></p>
-</div>
-
-
+        <h2>关于</h2>
+        <p><a href="about.html" class="button">了解更多</a></p>
+    </div>
     <div class="container">
         <div class="main-content">
             <div class="post fadeInUp">
-    <h2>分类</h2>
-    <ul>
-        <li><a href="#">技术</a></li>
-        <li><a href="#">生活</a></li>
-        <li><a href="#">...</a></li>
-    </ul>
-</div>
-<div class="post fadeInUp">
-    <h2>标签</h2>
-    <ul>
-        <li><a href="#">HTML</a></li>
-        <li><a href="#">CSS</a></li>
-        <li><a href="#">JavaScript</a></li>
-        <li><a href="#">...</a></li>
-    </ul>
-</div>
-
+                <h2>分类</h2>
+                <ul>
+                    <li><a href="#">技术</a></li>
+                    <li><a href="#">生活</a></li>
+                    <li><a href="#">...</a></li>
+                </ul>
+            </div>
             <div class="post fadeInUp">
-    <h2>如何提高自己的编程能力？</h2>
-    <p>这篇文章将为您提供一些关于如何提高自己的编程能力的技巧和建议。</p>
-    <p><a href="post.html" class="button">阅读更多</a></p>
-    <span>2023-03-01</span>
-</div>
-
+                <h2>标签</h2>
+                <ul>
+                    <li><a href="#">HTML</a></li>
+                    <li><a href="#">CSS</a></li>
+                    <li><a href="#">JavaScript</a></li>
+                    <li><a href="#">...</a></li>
+                </ul>
+            </div>
+            <div class="post fadeInUp">
+                <h2>如何提高自己的编程能力？</h2>
+                <p>这篇文章将为您提供一些关于如何提高自己的编程能力的技巧和建议。</p>
+                <p><a href="post.html" class="button">阅读更多</a></p>
+                <span>2023-03-01</span>
+            </div>
             <div class="post fadeInUp">
                 <h2>欢迎来到俸云龙的个人博客！</h2>
                 <p>这是一个关于技术、生活、经验的博客，我希望在这里与大家分享我的见解和想法。</p>
                 <a href="post.html" class="button">阅读更多</a>
             </div>
-
             <div class="post fadeInUp">
                 <h2>最新文章</h2>
                 <ul>
@@ -96,82 +185,8 @@
                     </li>
                 </ul>
             </div>
-
             <div class="post fadeInUp">
                 <h2>分类</h2>
                 <ul>
                     <li>
                         <a href="#">
-                            <h3>技术</h3>
-                            <p>包括但不限于编程、网络、数据库等技术主题。</p>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <h3>生活</h3>
-                            <p>包括但不限于日常生活、旅行、阅读等生活主题。</p>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <h3>经验</h3>
-                            <p>包括但不限于工作经验、项目经验、生活经验等主题。</p>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-
-            <div class="post fadeInUp">
-                <h2>标签</h2>
-                <ul>
-                    <li><a href="#">HTML</a></li>
-                    <li><a href="#">CSS</a></li>
-                    <li><a href="#">JavaScript</a></li>
-                    <li><a href="#">Python</a></li>
-                    <li><a href="#">PHP</a></li>
-                    <li><a href="#">MySQL</a></li>
-                    <li><a href="#">Linux</a></li>
-                    <li><a href="#">Git</a></li>
-                    <li><a href="#">Docker</a></li>
-                    <li><a href="#">React</a></li>
-                    <li><a href="#">Vue</a></li>
-                    <li><a href="#">Node.js</a></li>
-                    <li><a href="#">Express</a></li>
-                    <li><a href="#">MongoDB</a></li>
-                    <li><a href="#">Redis</a></li>
-                    <li><a href="#">Kubernetes</a></li>
-                    <li><a href="#">AWS</a></li>
-                    <li><a href="#">Azure</a></li>
-                    <li><a href="#">GCP</a></li>
-                    <li><a href="#">CI/CD</a></li>
-                    <li><a href="#">敏捷开发</a></li>
-                    <li><a href="#">Scrum</a></li>
-                    <li><a href="#">Kanban</a></li>
-                    <li><a href="#">设计模式</a></li>
-                    <li><a href="#">算法</a></li>
-                    <li><a href="#">数据结构</a></li>
-                    <li><a href="#">LeetCode</a></li>
-                    <li><a href="#">...</a></li>
-                </ul>
-            </div>
-
-            <div class="post fadeInUp">
-                <h2>关于我</h2>
-                <p>我是一个热爱技术的程序员，在编程方面有着丰富的经验和实践。我一直在努力地学习和提高自己的技能和技能，并希望能够分享我的知识和经验给大家。</p>
-                <p>如果您有任何问题或建议，请随时联系我。</p>
-                <a href="about.html" class="button">了解更多</a>
-            </div>
-
-            <div class="post fadeInUp">
-                <h2>联系我</h2>
-                <ul>
-                    <li>
-                        <a href="mailto:wangyunlong@example.com">
-                            <i class="fas fa-envelope"></i>
-                            <span>电子邮件</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://github.com/wangyunlong-cloud" target="_blank">
-                            <i class="fab fa-github"></i>
-                            <span>GitHub</span>
