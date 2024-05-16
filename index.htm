@@ -137,6 +137,35 @@
         .search button[type="button"]:hover {
             background-color: #34495e;
         }
+
+        .post h2 {
+            margin-bottom: 10px;
+        }
+
+        .post p {
+            margin-bottom: 20px;
+        }
+
+        .post span {
+            color: #777;
+        }
+
+        .post ul {
+            padding: 0;
+        }
+
+        .post ul li {
+            margin-bottom: 10px;
+        }
+
+        .post a {
+            color: #333;
+            text-decoration: none;
+        }
+
+        .post a:hover {
+            color: #555;
+        }
     </style>
 </head>
 <body>
@@ -230,27 +259,3 @@
                     <li>
                         <a href="#">
 
-```javascript
-<script>
-    // 获取搜索框和搜索按钮的 DOM 元素
-    const searchBox = document.getElementById('search-box');
-    const searchButton = document.getElementById('search-button');
-
-    // 给搜索按钮添加点击事件
-    searchButton.addEventListener('click', () => {
-        // 获取搜索关键字
-        const keyword = searchBox.value.trim();
-
-        // 如果搜索关键字不为空，则进行搜索
-        if (keyword) {
-            // 在此处添加搜索逻辑，例如查询后端 API 或在当前页面中搜索
-        }
-    });
-
-    // 给搜索框添加键盘按下事件，如果按下了回车键，则触发搜索事件
-    searchBox.addEventListener('keydown', (event) => {
-        if (event.key === 'Enter') {
-            searchButton.click();
-        }
-    });
-</script>
