@@ -1,0 +1,35 @@
+/* styles.css */
+body {
+    background: linear-gradient(to bottom, #f0f0f0, #ffffff); /* 渐变色背景 */
+    font-family: Arial, sans-serif; /* 设置字体 */
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    background-color: #333; /* 导航栏背景颜色 */
+    color: #fff; /* 导航栏文字颜色 */
+}
+
+.content {
+    padding: 20px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    display: inline;
+    margin-right: 10px;
+}
+
+a {
+    color: #333; /* 链接颜色 */
+    text-decoration: none;
+}
+
+a:hover {
+    color: #555; /* 鼠标悬停时链接颜色 */
+}
